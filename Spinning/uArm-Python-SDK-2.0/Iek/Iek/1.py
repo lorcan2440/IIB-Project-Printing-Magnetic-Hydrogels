@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu May  9 16:02:27 2019
+
+@author: Biointerface
+"""
+print('\nVertical verical line printing')
+print('\nMove to the first line position')
+swift.flush_cmd(wait_stop=True)
+swift.set_position(xyarm_line[-1, 0], xyarm_line[-1, 1], 10, speed=3000, timeout=20)
+time.sleep(1)
+swift.set_position(xyarm_line[-1, 0], xyarm_line[-1, 1], z_vline, wait=True)
+time.sleep(1)
+swift.flush_cmd(wait_stop=True)
+ArduinoSerial.write(b'3')
+swift.set_position(xyarm_line[-1, 0], xyarm_line[-1, 1], z_vline-L_vline, speed=sp_vline, wait=True)
+swift.flush_cmd(wait_stop=True)       
+ArduinoSerial.write(b'5')
+time.sleep(1)        
+swift.set_buzzer(frequency=3000, duration=0.1)
+swift.flush_cmd(wait_stop=True)
+print('\nLowering nozzle to z = 10')
+swift.set_position(z=10, speed=3000, wait=True)
+print('......')
+
+print('\nMove to the second line position')
+swift.flush_cmd(wait_stop=True)
+swift.set_position(xyarm_line[0, 0], xyarm_line[0, 1], 10, speed=3000, timeout=20)
+time.sleep(1)
+swift.set_position(xyarm_line[0, 0], xyarm_line[0, 1], z_vline, wait=True)
+time.sleep(1)
+ArduinoSerial.write(b'3')
+swift.set_position(xyarm_line[0, 0], xyarm_line[0, 1], z_vline-L_vline, speed=sp_vline, wait=True)
+swift.flush_cmd(wait_stop=True)       
+ArduinoSerial.write(b'5')        
+time.sleep(1)
+swift.set_buzzer(frequency=3000, duration=0.1)
+print('\nLowering nozzle to z = 10')
+swift.set_position(z=10, speed=3000, wait=True)
+swift.flush_cmd(wait_stop=True)
+print('......')
