@@ -164,10 +164,11 @@ class Swift(Pump, Keys, Gripper, Grove):
 
     if asyncio:
         @staticmethod
-        @asyncio.coroutine
-        def _async_run_callback(callback, msg):
-            yield from callback(msg)
+        #@asyncio.coroutine
+        async def _async_run_callback(callback, msg):  # changed from : def ...
+            await callback(msg)  # changed from: yield from callback(msg)
 
+        # Replace above with this if using Python 3.10 or higher
         # @staticmethod
         # async def _async_run_callback(callback, msg):
         #     await callback(msg)

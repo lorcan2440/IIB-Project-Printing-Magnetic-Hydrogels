@@ -1,0 +1,16 @@
+[StartTime]
+fibre-Static 4.MFC=3s
+[SolverState]
+fibre-Static 4.MFC=2
+[MainFrame]
+fibre-Static 4.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMECAAAAAHEBAAAAAELDAAAAAKBCAAAAA
+[ShowMin]
+fibre-Static 4.MFC=No
+[SolverType]
+fibre-Static 4.MFC=Linear Analysis
+[StudyType]
+fibre-Static 4.MFC=0
+[StudyName]
+fibre-Static 4.MFC=Static 4
+[Solver]
+fibre-Static 4.MFC=Iterative
