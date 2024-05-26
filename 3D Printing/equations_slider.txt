@@ -1,0 +1,15 @@
+﻿"slider_length"=13
+"D1@Sketch1"="slider_length"
+"slider_support_thickness"= 1
+"D2@Sketch1"="slider_support_thickness"
+"D5@Sketch1"="slider_support_thickness"
+"D3@Sketch1"="slider_support_thickness"
+"D4@Sketch1"="slider_support_thickness"
+"slider_thickness"= 4
+"D6@Sketch1"="slider_thickness"
+"slider_clamp_width"= 3.3
+"D7@Sketch1"="slider_clamp_width"
+"D8@Sketch1"="slider_clamp_width"
+"slider_thickness_along_fork"=2
+"D1@Boss-Extrude1"="slider_thickness_along_fork"
+"D1@Fillet1"="slider_thickness"/2

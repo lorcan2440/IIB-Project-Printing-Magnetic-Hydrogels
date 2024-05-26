@@ -1,9 +1,0 @@
-﻿"internal_length"=15
-"fork_width"=2.5
-"frame_extend_length"=5
-"frame_extend_width"=10
-"fork_length"=25
-"hole_diameter"=0.72
-"fork_thickness"=1.5
-"clearance"= 0.5
-"slider_thickness"= 1.5

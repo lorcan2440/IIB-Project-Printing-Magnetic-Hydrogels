@@ -1,0 +1,17 @@
+﻿"frame_external_width"= 17.5
+"D2@Sketch1"= "frame_external_width"
+"frame_internal_width"=7.5
+"D6@Sketch1"="frame_internal_width"
+"fork_length"=25
+"D3@Sketch1"="fork_length"
+"fork_width"=2.5
+"D4@Sketch1"="fork_width"
+"D7@Sketch1"= "fork_width"
+"D5@Sketch1"="fork_length" - "fork_width"
+"base_length"=10
+"D1@Sketch1"="base_length"
+"frame_thickness"=1.5
+"D1@Boss-Extrude1"="frame_thickness"
+"D3@Sketch2"="frame_thickness"/2
+"D2@Sketch2"="base_length" - 1.5mm
+"D1@Fillet2"="frame_thickness"/2

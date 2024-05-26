@@ -1,6 +1,12 @@
 # uArm-Python-SDK
 ----------
 
+## For the Project
+
+Run the file at:
+`C:\Users\lnick\Documents\IIB Engineering\Project\Python\Robot Arm Spinner\uArm-Python-SDK-2.0\code\fiber_density.py`
+
+
 ## Overview
 This module encapsulates the operations for uArm. It provides baisc Movement on Python.
 The library only supports uArm Swift/SwiftPro. For Metal, please use [pyuarm](https://github.com/uArm-Developer/pyuarm) or [pyuf](https://github.com/uArm-Developer/uArm-Python-SDK/tree/1.0-pyuf) instead.
