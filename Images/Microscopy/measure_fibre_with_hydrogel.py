@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.stats import ttest_ind
 
 plt.style.use(r'C:\LibsAndApps\Python config files\proplot_style.mplstyle')
 
@@ -63,6 +64,11 @@ std_dev_fibre_change = np.std(fibres_change)
 std_dev_hydrogel_change = np.std(hydrogel_change)
 
 print(mean_fibre_change, std_dev_fibre_change, mean_hydrogel_change, std_dev_hydrogel_change)
+
+# t-test for independent means between 'magnet on' and 'magnet off' states for fibres and hydrogel
+t_stat_fibres, p_val_fibres = ttest_ind(fibres_data_on, fibres_data_off)
+t_stat_hydrogel, p_val_hydrogel = ttest_ind(hydrogel_data_on, hydrogel_data_off)
+print(t_stat_fibres, p_val_fibres, t_stat_hydrogel, p_val_hydrogel)
 
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
