@@ -45,7 +45,7 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
 
 for col, lambda_w in zip(['black', 'green', 'gold', 'red'], lambda_range):
     y = solve_higher_ode(w, EI, lambda_w, l)
-    ax1.plot(x, 384 * EI * y[0], label=r'$\lambda_w = $ ' + str(lambda_w), color=col)
+    ax1.plot(x, -384 * EI * y[0], label=r'$\lambda_w = $ ' + str(lambda_w), color=col)
 ax1.legend()
 ax1.set_xlabel(r'$\frac{x}{L}$')
 ax1.set_ylabel(r'$\frac{y}{y_{max}}$')
